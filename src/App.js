@@ -9,6 +9,7 @@ import New_shouldComponentUpdate from './New_shouldComponentUpdate.js';
 import New_getSnapshotBeforeUpdate from './New_getSnapshotBeforeUpdate.js';
 import New_getDerivedStateFromProps from './New_getDerivedStateFromProps';
 import NewClass from './NewClass';
+import New_PropTypes from './New_PropTypes';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       {/* <New_shouldComponentUpdate /> */}
       {/* <New_getSnapshotBeforeUpdate /> */}
       <NewClass />
+      <New_PropTypes name="yash" age={25} />
       <New_getDerivedStateFromProps favcol="yellow" />
     </>
   );

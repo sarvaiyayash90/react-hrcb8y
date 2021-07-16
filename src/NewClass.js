@@ -2,12 +2,12 @@ import React from 'react';
 class NewClass extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = { username: '' };
-    this.username = React.createRef();
+    this.state = { username: '' };
+    // this.username = React.createRef();
   }
   myChangeHandler = event => {
-    // this.setState({ username: event.target.value });
-    this.username.current.value;
+    this.setState({ username: event.target.value });
+    // this.username.current.value;
   };
   render() {
     let header = '';
