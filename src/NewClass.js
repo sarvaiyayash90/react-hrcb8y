@@ -6,12 +6,13 @@ class NewClass extends React.Component {
     this.username = React.createRef();
   }
   myChangeHandler = event => {
-    this.setState({ username: event.target.value });
+    // this.setState({ username: event.target.value });
+    this.username.current.value;
   };
   render() {
     let header = '';
     if (this.state.username) {
-      header = <h1>Hello {this.state.username}</h1>;
+      header = <h1>Hello {this.username}</h1>;
     } else {
       header = '';
     }
@@ -19,7 +20,11 @@ class NewClass extends React.Component {
       <form>
         {header}
         <p>Enter your name:</p>
-        <input type="text" onChange={this.myChangeHandler} />
+        <input
+          type="text"
+          ref={this.username}
+          onChange={this.myChangeHandler}
+        />
       </form>
     );
   }
