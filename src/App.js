@@ -24,10 +24,10 @@ export default function App() {
         {/* <Didupdate /> */}
         {/* <New_shouldComponentUpdate /> */}
         {/* <New_getSnapshotBeforeUpdate /> */}
-        {/* <NewClass />
-        <New_PropTypes name="yash" age={25} /> */}
-        <New_WindowDimensions />
-        <New_getDerivedStateFromProps favcol="yellow" />
+        <NewClass />
+        {/* <New_PropTypes name="yash" age={25} /> */}
+        {/* <New_WindowDimensions />
+        <New_getDerivedStateFromProps favcol="yellow" /> */}
       </React.Fragment>
     </>
   );
