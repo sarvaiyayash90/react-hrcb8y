@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import './style.css';
 import NewApp from './NewApp';
 import Cheak from './Cheak.js';
@@ -11,19 +11,24 @@ import New_getDerivedStateFromProps from './New_getDerivedStateFromProps';
 import NewClass from './NewClass';
 import New_PropTypes from './New_PropTypes';
 
+import New_WindowDimensions from './New_WindowDimensions';
+
 export default function App() {
   return (
     <>
-      {/* <h1>hello</h1> */}
-      {/* <NewApp />
-      <Cheak /> */}
-      <Demo />
-      {/* <Didupdate /> */}
-      {/* <New_shouldComponentUpdate /> */}
-      {/* <New_getSnapshotBeforeUpdate /> */}
-      <NewClass />
-      <New_PropTypes name="yash" age={25} />
-      <New_getDerivedStateFromProps favcol="yellow" />
+      <React.Fragment>
+        {/* <h1>hello</h1> */}
+        {/* <NewApp />
+        <Cheak /> */}
+        {/* <Demo /> */}
+        {/* <Didupdate /> */}
+        {/* <New_shouldComponentUpdate /> */}
+        {/* <New_getSnapshotBeforeUpdate /> */}
+        {/* <NewClass />
+        <New_PropTypes name="yash" age={25} /> */}
+        <New_WindowDimensions />
+        <New_getDerivedStateFromProps favcol="yellow" />
+      </React.Fragment>
     </>
   );
   // const [name, setname] = useState();
