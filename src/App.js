@@ -10,6 +10,7 @@ import New_getSnapshotBeforeUpdate from './New_getSnapshotBeforeUpdate.js';
 import New_getDerivedStateFromProps from './New_getDerivedStateFromProps';
 import NewClass from './NewClass';
 import New_PropTypes from './New_PropTypes';
+import Demo_new from './Demo_new';
 
 import New_WindowDimensions from './New_WindowDimensions';
 
@@ -17,17 +18,18 @@ export default function App() {
   return (
     <>
       <React.Fragment>
+        {/* <Demo_new /> */}
         {/* <h1>hello</h1> */}
-        {/* <NewApp />
-        <Cheak /> */}
+        {/* <NewApp /> */}
+        {/* <Cheak /> */}
         {/* <Demo /> */}
         {/* <Didupdate /> */}
         {/* <New_shouldComponentUpdate /> */}
         {/* <New_getSnapshotBeforeUpdate /> */}
-        <NewClass />
+        {/* <NewClass /> */}
         {/* <New_PropTypes name="yash" age={25} /> */}
-        {/* <New_WindowDimensions />
-        <New_getDerivedStateFromProps favcol="yellow" /> */}
+        {/* <New_WindowDimensions /> */}
+        <New_getDerivedStateFromProps favcol="yellow" />
       </React.Fragment>
     </>
   );

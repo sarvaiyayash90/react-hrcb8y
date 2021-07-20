@@ -15,10 +15,28 @@ class New_getDerivedStateFromProps extends React.Component {
   //   return true;
   // }
 
-  changeColor = () => {
-    console.log('call this button call event');
-    this.setState({ favoritecolor: 'blue' });
-  };
+  // changeColor = () => {
+  //   console.log('call this button call event');
+  //   this.setState({ favoritecolor: 'blue' });
+  // };
+
+  // shouldComponentUpdate() {
+  //   console.log('favoritecolor', this.state.favoritecolor);
+  //   return true;
+  // }
+
+  // componentDidUpdate() {
+  //   console.log('componentDidUpdate this part', this.state.favoritecolor);
+  // }
+
+  // changeColor = () => {
+  //   console.log('call this button call event');
+  //   // this.setState({ favoritecolor: 'blue' });
+  //   // this.newcolor = this.this.favoritecolor;
+  //   this.state.favoritecolor === 'red'
+  //     ? this.setState({ favoritecolor: 'blue' })
+  //     : this.setState({ favoritecolor: 'red' });
+  // };
 
   render() {
     console.log('render call this part');

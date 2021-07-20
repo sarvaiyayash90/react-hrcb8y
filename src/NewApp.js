@@ -6,7 +6,7 @@ const NewApp = () => {
 
   const call_this = () => {
     const dd = {
-      name: data.current.focus()
+      name: data.current.value
     };
   };
   return (
