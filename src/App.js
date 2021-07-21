@@ -10,16 +10,18 @@ import New_getSnapshotBeforeUpdate from './New_getSnapshotBeforeUpdate.js';
 import New_getDerivedStateFromProps from './New_getDerivedStateFromProps';
 import NewClass from './NewClass';
 import New_PropTypes from './New_PropTypes';
-import Demo_new from './Demo_new';
+// import Demo_new from './Demo_new';
 
 import New_WindowDimensions from './New_WindowDimensions';
 import Demo_img from './Demo_img';
+import In_Data from './In_Data.js';
 
 export default function App() {
   return (
     <>
       <React.Fragment>
-        <Demo_img />
+        <In_Data />
+        {/* <Demo_img /> */}
         {/* <Demo_new /> */}
         {/* <h1>hello</h1> */}
         {/* <NewApp /> */}
@@ -31,7 +33,7 @@ export default function App() {
         {/* <NewClass /> */}
         {/* <New_PropTypes name="yash" age={25} /> */}
         {/* <New_WindowDimensions /> */}
-        <New_getDerivedStateFromProps favcol="yellow" />
+        {/* <New_getDerivedStateFromProps favcol="yellow" /> */}
       </React.Fragment>
     </>
   );
