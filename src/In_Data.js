@@ -5,7 +5,6 @@ const In_Data = () => {
   const [data, setdata] = useState([]);
 
   const oninputChange = e => {
-    console.log('data', e.target.value);
     setusername(e.target.value);
   };
 
@@ -17,13 +16,17 @@ const In_Data = () => {
     setdata([...data, dd]);
   };
 
+  const deleteData = data => {
+    console.log('data', data);
+  };
+
   return (
     <>
       <input
         type="text"
         name="username"
         value={username}
-        onBlur={e => oninputChange(e)}
+        onChange={e => oninputChange(e)}
       />
       <button type="submit" onClick={e => submitData(e)}>
         submit
@@ -31,7 +34,18 @@ const In_Data = () => {
       <h3>
         All Data:-
         {data.map((item, index) => {
-          return <p key={index}>{item.username}</p>;
+          return (
+            <>
+              <p key={index}>{item.username}</p>
+              <button
+                onClick={index => {
+                  deleteData(index);
+                }}
+              >
+                delete
+              </button>
+            </>
+          );
         })}
       </h3>
     </>
