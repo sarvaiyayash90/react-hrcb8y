@@ -13,11 +13,13 @@ import New_PropTypes from './New_PropTypes';
 import Demo_new from './Demo_new';
 
 import New_WindowDimensions from './New_WindowDimensions';
+import Demo_img from './Demo_img';
 
 export default function App() {
   return (
     <>
       <React.Fragment>
+        <Demo_img />
         {/* <Demo_new /> */}
         {/* <h1>hello</h1> */}
         {/* <NewApp /> */}
