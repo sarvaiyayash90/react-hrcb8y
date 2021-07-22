@@ -11,13 +11,21 @@ const In_Data = () => {
   const submitData = e => {
     e.preventDefault();
     const dd = {
+      id: Math.floor(Math.random() * 1000000),
       username: username
     };
     setdata([...data, dd]);
   };
 
-  const deleteData = data => {
-    console.log('data', data);
+  const deleteData = id => {
+    const delete_data = data.filter(val => {
+      return val.id !== id;
+    });
+    setdata(delete_data);
+  };
+
+  const editData = id => {
+    console.log('data', id);
   };
 
   return (
@@ -33,17 +41,31 @@ const In_Data = () => {
       </button>
       <h3>
         All Data:-
-        {data.map((item, index) => {
+        <br />
+        <br />
+        {data.map(item => {
           return (
             <>
-              <p key={index}>{item.username}</p>
-              <button
-                onClick={index => {
-                  deleteData(index);
-                }}
-              >
-                delete
-              </button>
+              <span key={item.id}>
+                {item.id} &nbsp;&nbsp;&nbsp;{item.username}
+                &nbsp;&nbsp;&nbsp;
+                <button
+                  onClick={() => {
+                    deleteData(item.id);
+                  }}
+                >
+                  delete
+                </button>
+                &nbsp;
+                <button
+                  onClick={() => {
+                    editData(item.id);
+                  }}
+                >
+                  Edit
+                </button>
+              </span>
+              <br />
             </>
           );
         })}
