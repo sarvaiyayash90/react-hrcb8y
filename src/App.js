@@ -28,7 +28,7 @@ export default function App() {
         {/* <Cheak /> */}
         {/* <Demo /> */}
         {/* <Didupdate /> */}
-        {/* <New_shouldComponentUpdate /> */}
+        <New_shouldComponentUpdate />
         {/* <New_getSnapshotBeforeUpdate /> */}
         {/* <NewClass /> */}
         {/* <New_PropTypes name="yash" age={25} /> */}
